@@ -1,0 +1,19 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Pro-SaaSKit",
+  "theme": "mint",
+  "colors": {
+    "primary": "#00FF66",
+    "light": "#00E5FF",
+    "dark": "#0D1117"
+  },
+  "navigation": {
+    "pages": [
+      "introduction",
+      "Configuration API",
+      "Core Engines",
+      "Configuration UI",
+      "support"
+    ]
+  }
+}
