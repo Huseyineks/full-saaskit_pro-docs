@@ -131,3 +131,4 @@ For example:
   "route": "/admin/users/list",
   "permissionKeys": ["user.read"]
 }
+```
