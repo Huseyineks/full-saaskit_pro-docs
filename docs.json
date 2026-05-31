@@ -17,28 +17,38 @@
       "url": "standard-saaskit"
     }
   ],
-  "navigation": [
-    {
-      "group": "Pro-SaaSKit Setup",
-      "tab": "pro-saaskit",
-      "pages": [
-        "pro-saaskit/introduction",
-        "pro-saaskit/Configuration API",
-        "pro-saaskit/Core Engines",
-        "pro-saaskit/Configuration UI",
-        "pro-saaskit/support"
-      ]
-    },
-    {
-      "group": "Standard-SaaSKit Setup",
-      "tab": "standard-saaskit",
-      "pages": [
-        "standard-saaskit/introduction",
-        "standard-saaskit/Configuration API",
-        "standard-saaskit/Core Engines",
-        "standard-saaskit/Configuration UI",
-        "standard-saaskit/support"
-      ]
-    }
-  ]
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "pro-saaskit",
+        "groups": [
+          {
+            "group": "Pro-SaaSKit Setup",
+            "pages": [
+              "pro-saaskit/introduction",
+              "pro-saaskit/Configuration API",
+              "pro-saaskit/Core Engines",
+              "pro-saaskit/Configuration UI",
+              "pro-saaskit/support"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "standard-saaskit",
+        "groups": [
+          {
+            "group": "Standard-SaaSKit Setup",
+            "pages": [
+              "standard-saaskit/introduction",
+              "standard-saaskit/Configuration API",
+              "standard-saaskit/Core Engines",
+              "standard-saaskit/Configuration UI",
+              "standard-saaskit/support"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
