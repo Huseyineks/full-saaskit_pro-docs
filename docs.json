@@ -1,19 +1,42 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Pro-SaaSKit",
+  "name": "CODEVEST LLC",
   "theme": "mint",
   "colors": {
     "primary": "#00FF66",
     "light": "#00E5FF",
     "dark": "#0D1117"
   },
-  "navigation": {
-    "pages": [
-      "introduction",
-      "Configuration API",
-      "Core Engines",
-      "Configuration UI",
-      "support"
-    ]
-  }
+  "tabs": [
+    {
+      "name": "Pro-SaaSKit",
+      "url": "pro-saaskit"
+    },
+    {
+      "name": "Standard-SaaSKit",
+      "url": "standard-saaskit"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Pro-SaaSKit Kurulum",
+      "pages": [
+        "pro-saaskit/introduction",
+        "pro-saaskit/Configuration API",
+        "pro-saaskit/Core Engines",
+        "pro-saaskit/Configuration UI",
+        "pro-saaskit/support"
+      ]
+    },
+    {
+      "group": "Standard-SaaSKit Kurulum",
+      "pages": [
+        "standard-saaskit/introduction",
+        "standard-saaskit/Configuration API",
+        "standard-saaskit/Core Engines",
+        "standard-saaskit/Configuration UI",
+        "standard-saaskit/support"
+      ]
+    }
+  ]
 }
