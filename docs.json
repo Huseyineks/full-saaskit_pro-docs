@@ -20,7 +20,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "pro-saaskit",
+        "tab": "Pro Saaskit",
         "groups": [
           {
             "group": "Pro-SaaSKit Setup",
@@ -35,7 +35,7 @@
         ]
       },
       {
-        "tab": "standard-saaskit",
+        "tab": "Standard Saaskit",
         "groups": [
           {
             "group": "Standard-SaaSKit Setup",
