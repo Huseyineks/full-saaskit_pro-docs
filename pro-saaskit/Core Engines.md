@@ -194,7 +194,7 @@ Core Mechanics: Acts as a self-healing financial data layer. It sweeps the datab
 🧹 Multi-Tenant Log Retention Service
 Execution Boundary: Runs on an automated 8-hour tick loop.
 
-Core Mechanics: Enforces custom retention schedules. It evaluates individual tenant configuration profiles, looks up their defined LogRetentionDays limit, and purges older records from the AuditLog and ActivityLog schemas to prevent unbounded database database storage inflation.
+Core Mechanics: Enforces custom retention schedules. It evaluates individual tenant configuration profiles, looks up their defined LogRetentionDays limit, and purges older records from the AuditLog and ActivityLog schemas to prevent unbounded database storage inflation.
 
 🕒 Token Event Cleanup Worker
 Execution Boundary: Executes on a strict 1-hour recurring timer.
@@ -226,10 +226,11 @@ Within the `StripeService` layer, the checkout routing governs the subscription 
 
 ### 🗄️ Multi-Tenant Data Isolation (EF Core Query Filters)
 
-When extending the platform infrastructure or implementing custom custom entities, you must enforce strict database-level boundaries to prevent data leaks across workspaces. SaaSKit handles this natively via Entity Framework Core Global Query Filters.
+When extending the platform infrastructure or implementing custom entities, you must enforce strict database-level boundaries to prevent data leaks across workspaces. SaaSKit handles this natively via Entity Framework Core Global Query Filters.
 
 If your new entity is tenant-specific, you **MUST** configure the automated tenancy evaluation filter inside your `ApplicationDbContext` initialization pipeline:
 
 ```csharp
 entity.HasQueryFilter(e => _tenantIdProvider.IsSystemUser || e.TenantId == _tenantIdProvider.CurrentTenantId);
+```
 

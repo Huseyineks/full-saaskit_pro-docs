@@ -63,7 +63,9 @@ Within the TokenService layout, the ApplyDomainAndSecureSettings engine ensures 
 NOTE 1: Ensure you replace "yourdomain.com" and ".yourdomain.com" inside the string evaluation with your own custom apex root domain address.
 
 
-## 🏗️ 4. Applying Database MigrationsSaaSKit uses Entity Framework Core to orchestrate database modifications. Follow these steps to map the architectural schema directly to your target SQL Server instance:
+## 🏗️ 4. Applying Database Migrations
+
+SaaSKit uses Entity Framework Core to orchestrate database modifications. Follow these steps to map the architectural schema directly to your target SQL Server instance:
 
 1. Open your project solution in your preferred IDE.
 
@@ -87,7 +89,7 @@ SaaSKit contains an integrated DbSeeder.cs workflow situated directly within the
 🛂 Root Identity Generation
 The seeder captures your declared configuration parameters to provision your global access credentials:
 
-Super Admin Activation: Extracts your entry from "System:SuperAdminEmail". If none is specified, it fallbacks onto superadmin@superadmin.com.
+Super Admin Activation: Extracts your entry from "System:SuperAdminEmail". If none is specified, it falls back onto superadmin@superadmin.com.
 
 Initial Access Password: Instantiated globally with a default temporary password of Admin123!. Change this credential immediately after logging into your admin panel dashboard.
 
