@@ -16,34 +16,45 @@ SaaSKit is a battle-tested ecosystem that combines the raw, decoupled power of *
 We packed SaaSKit with complex enterprise features that usually take months to design, test, and stabilize.
 
 ### 🌐 Subdomain-Based Multi-Tenancy
+
 SaaSKit features automated tenant routing mapped directly to the URL hierarchy out of the box. The system dynamically parses subdomains (e.g., `tenant1.pro.saas`, `tenant2.pro.saas`) to isolate workspaces instantly, providing a fully tailored experience for every single tenant.
 
 ### 🎨 Enterprise White-Labeling & Full Custom Branding
+
 Empower your business users with native white-labeling capabilities to make the platform completely their own. Tenants can fully control their identity through the **General Appearance Settings**:
+
 * **Complete Visual Control:** Dynamically set tenant logos, custom dashboard background colors, primary brand colors, and global font families.
 * **Localization Settings:** Configure custom app names, global date formats, and localized timezones unique to each workspace.
 * **Asset & Email Delivery Networks:** Easily configure custom CDN assets for storage isolation and native SMTP/Email configuration values directly from the admin panel.
+
 **Custom Branded Email Templates:** Tenants have dedicated controls to fully style their outbound communications. They can independently set the custom font family, background color, and primary brand color specifically for their email templates. The system dynamically injects these styles along with the tenant's logo during email generation, delivering a uniquely branded template for every send.
 
 ### 🔌 Seamless Enterprise Integrations
+
 SaaSKit provides native infrastructure panels to link your external services securely under the **Integrations** engine:
+
 * **Advanced Stripe Settings:** Instantly map and customize payment channels, connect price keys, and toggle billing behaviors within a couple of clicks.
 * **Email Settings:** Setup global or tenant-specific email servers. Once configured, the platform utilizes these exact credentials to send personalized, fully branded email templates to external clients.
 
 ### 💳 Bulletproof Stripe Subscription Lifecycle
+
 Go lightyears beyond a simple checkout button. SaaSKit features a flawless, automated subscription engine handling the absolute full lifecycle of SaaS billing:
+
 * **Advanced Subscription Operations:** Instant support for Upgrade, Downgrade, Resume, Pause, Cancel at Period End, and Cancel Immediately.
 * **Smart Financial Safeguards:** Automated customer balance refunds for paused or immediate cancellations.
 * **100% Accounting Precision:** Built-in Invoice, Payment, Transaction, and Order Generation.
 * **Stripe Billing Reconciliation Job:** A fail-safe background service that guarantees database sync and accurate accounting even in the event of transient network drops or database timeouts.
-* **Real-Time Webhook Engine:** Instant data synchronization between Stripe and your local DB—achieving lightning-fast, zero-refresh UI updates.
+* **Real-Time Webhook Engine:** Instant data synchronization between Stripe and your local DB-achieving lightning-fast, zero-refresh UI updates.
 
 ### 🛂 Action-Based, Permission-Driven RBAC
+
 Security is baked into the foundation. Our Role-Based Access Control (RBAC) relies on exact permission checks:
+
 * **UI-Level Security:** Users without explicit read permissions are restricted from even seeing specific pages.
 * **API-Level Enforcement:** Fine-grained actions (Add, Update, Delete) are strictly bound to permissions, locking down unauthorized API interactions instantly.
 
 ### 🔔 Real-Time Notification & Advanced Auditing
+
 * **Live Notifications:** An app-wide live notification engine powered by customizable endpoint filtering, allowing users to toggle exactly which events trigger a notification.
 * **Audit & Activity Logs:** Full-scale user activity tracking and secure audit logs to monitor critical operations across the entire tenant workspace.
 
