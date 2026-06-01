@@ -197,6 +197,10 @@ To maximize runtime throughput and maintain database consistency without blockin
 
 The onboarding pipeline manages infrastructure binding and subscription initialization when a new workspace is provisioned.
 
+### 🧩 Workspace Membership Model
+
+The Pro package is designed around a **multi-workspace multi-tenancy** approach. In this model, a user can be associated with **multiple tenant workspaces** simultaneously. This allows the same identity to participate in different organizations while preserving workspace-level role assignments, permission boundaries, and isolated operational context.
+
 ### 🛂 Automated Admin Role Assignment
 
 When a user provisions a new tenant workspace and initiates a subscription sequence, the core engine automatically assigns the **Admin (`admin`)** role to that user. This ensures the onboarding creator immediately obtains full operational permission claims and management control inside their newly isolated tenant boundary.

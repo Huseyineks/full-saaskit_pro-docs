@@ -19,6 +19,10 @@ We packed SaaSKit with complex enterprise features that usually take months to d
 
 SaaSKit supports subdomain-aware routing out of the box. The system dynamically parses subdomains (e.g., `tenant1.domain.com`, `tenant2.domain.com`) and resolves the active tenant context from the incoming URL so each tenant is reached through its own branded address.
 
+### 🏢 Single Workspace Multi-Tenancy
+
+The Standard package follows a **single workspace multi-tenancy** model. A user can belong to **only one tenant/workspace**, which makes the package ideal for SaaS products where each user operates inside a single organization context without switching across multiple organizations.
+
 ### 🎨 Targeted White-Label Settings
 
 This project does not expose full-platform white-labeling. White-label support is intentionally limited to **Email Settings** and **CDN Settings** so you can customize outbound email delivery and asset host configuration where needed.

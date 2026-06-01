@@ -19,6 +19,10 @@ We packed SaaSKit with complex enterprise features that usually take months to d
 
 SaaSKit features automated tenant routing mapped directly to the URL hierarchy out of the box. The system dynamically parses subdomains (e.g., `tenant1.pro.saas`, `tenant2.pro.saas`) to isolate workspaces instantly, providing a fully tailored experience for every single tenant.
 
+### 🏢 Multi-Workspace Multi-Tenancy
+
+The Pro package follows a **multi-workspace multi-tenancy** model. A user can belong to **multiple organizations/workspaces** at the same time, making it suitable for B2B platforms where the same account may participate across different tenants with separate roles and permissions.
+
 ### 🎨 Enterprise White-Labeling & Full Custom Branding
 
 Empower your business users with native white-labeling capabilities to make the platform completely their own. Tenants can fully control their identity through the **General Appearance Settings**:

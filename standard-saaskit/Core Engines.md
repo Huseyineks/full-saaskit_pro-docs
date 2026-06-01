@@ -197,6 +197,10 @@ To maximize runtime throughput and maintain database consistency without blockin
 
 The onboarding pipeline manages tenant binding and subscription initialization when a new tenant context is provisioned.
 
+### 🧩 Workspace Membership Model
+
+The Standard package is designed around a **single workspace multi-tenancy** approach. In this model, a user is associated with **one tenant/workspace only**. The permission model, onboarding flow, and tenant context resolution all operate with this single-organization membership assumption.
+
 ### 🛂 Automated Admin Role Assignment
 
 When a user provisions a new tenant context and initiates a subscription sequence, the core engine automatically assigns the **Admin (`admin`)** role to that user. This ensures the onboarding creator immediately obtains full operational permission claims and management control inside that tenant boundary.
